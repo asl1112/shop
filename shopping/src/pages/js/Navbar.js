@@ -29,6 +29,7 @@ export default class Navbar extends Component {
             <div className='nav_logo'>
                 Logo
             </div>
+
             <div className='nav_middle'>
                 <div className='nav_каталог'>
                     <IoIosMenu className='nav_каталог_icon' />
@@ -39,7 +40,16 @@ export default class Navbar extends Component {
                     <BiSearchAlt2 className='search_icon' />
                 </div>
             </div>
+
             <div className='nav_right'>
+                <div className='nav_cart'>
+                    <BsCartFill className='cart_icon' />
+                    <p className='cart_text'>Корзина</p>
+                </div>
+                <div className='nav_cart'>
+                    <BsCartFill className='cart_icon' />
+                    <p className='cart_text'>Корзина</p>
+                </div>
                 <div className='nav_cart'>
                     <BsCartFill className='cart_icon' />
                     <p className='cart_text'>Корзина</p>
