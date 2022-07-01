@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-bottom: 1px solid #F0F0F0;
+}
+.top_body {
+    width: 22%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.tel_box {
+    display: flex;
+}
+.tel_text {
+    font-weight: 500;
+    font-size: 14px;
+    color: #1D1D1D;
+    cursor: pointer;
+    transition: .3s;
+}
+.tel_text:hover {
+    color: #FF6875;
+}
+.tel_icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.location_box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.location_text {
+    font-weight: 500;
+    font-size: 14px;  
+    cursor: pointer;
+    color: #1d1d1d;  
+    transition: .3s;
+}
+.location_text:hover {
+    color: #FF6875;
+}
+.location_icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.nav {
+    width: 100%;
+    height: auto;
+    padding: 20px 5%;
+}
+.nav_logo {
+    width: 150px;
+    height: 48px;
+    background-color: #8d909b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+}
+.nav_middle {
+    display: flex;
+    align-items: center;
+}
+.nav_каталог {
+    width: 127px;
+    height: 48px;
+    background-color: #FF6875;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s;
+}
+.nav_каталог:hover {
+    border: 1px solid #FF6875;
+    background-color: #fff;
+}
+.nav_каталог:hover .nav_каталог_text {
+    color: #FF6875;
+}
+.nav_каталог:hover .nav_каталог_icon {
+    color: #FF6875; 
+}
+.nav_каталог_text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+.nav_каталог_icon {
+    font-size: 26px;
+    color: #fff;
+    margin-right: 5px;
+}
+.nav_search {
+    width: 586px;
+    height: 48px;
+    border: 1px solid #000;
+    position: relative;
+    border-radius: 8px;
+}
+.search_inp {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8d909b;
+    padding: 0 20px;
+    border-radius: 8px;
+}
+.search_icon {
+    font-size: 25px;
+    color: #1d1d1d;
+    position: absolute;
+    top: 50%; right: 40px;
+    transform: translateY(-50%);
+}
+.cart_text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #1d1d1d;
+}
