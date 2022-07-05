@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    padding: 0 5%;
+    border: 1px solid #000;
+}
+.card_top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.new_products {
+    font-weight: 700;
+    font-size: 34px;
+}
+.all_categories {
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #FF3232;
+}
+.card_top_icon  {
+    margin-left: 10px;
+    margin-top: 3px;
+}

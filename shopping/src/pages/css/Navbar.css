@@ -5,37 +5,38 @@
 }
 .top {
     width: 100%;
-    height: 50px;
+    height: 100px;
+    border-bottom: 1px solid #F8F8F8;
     display: flex;
     align-items: center;
-    justify-content: end;
-    border-bottom: 1px solid #F0F0F0;
+    justify-content: flex-end;
+    background-color: #F8F8F8;
 }
 .top_body {
-    width: 22%;
+    width: 50%;
     height: 100%;
-    background-color: #fff;
+    background-color: #F8F8F8;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-}
-.tel_box {
-    display: flex;
 }
 .tel_text {
-    font-weight: 500;
-    font-size: 14px;
-    color: #1D1D1D;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
     cursor: pointer;
     transition: .3s;
 }
+.tel_p {
+    color: #FF3232;
+    text-align: right;
+}
+.top_title {
+    font-weight: 500;
+    font-size: 22px;
+    margin-right: 20px;
+}
 .tel_text:hover {
     color: #FF6875;
-}
-.tel_icon {
-    font-size: 20px;
-    cursor: pointer;
-    margin-right: 5px;
 }
 .location_box {
     width: 50%;
@@ -68,16 +69,10 @@
     position: relative;
 }
 .nav_logo {
-    width: 150px;
-    height: 48px;
-    background-color: #8d909b;
+    width: 166px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 24px;
-    color: #fff;
     cursor: pointer;
 }
 .nav_middle {
@@ -87,17 +82,10 @@
 .nav_каталог {
     width: 127px;
     height: 48px;
-    background-color: #FF6875;
-    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: .3s;
-}
-.nav_каталог:hover {
-    border: 1px solid #FF6875;
-    background-color: #fff;
 }
 .nav_каталог:hover .nav_каталог_text {
     color: #FF6875;
@@ -108,12 +96,16 @@
 .nav_каталог_text {
     font-weight: 400;
     font-size: 16px;
-    color: #fff;
+    color: #000;
 }
 .nav_каталог_icon {
+    width: 45px;
+    height: 30px;
     font-size: 26px;
-    color: #fff;
+    color: #000;
     margin-right: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
 }
 .nav_search {
     width: 586px;
@@ -130,7 +122,7 @@
     font-size: 16px;
     color: #8d909b;
     padding: 0 20px;
-    border-radius: 8px;
+    border-radius: 30px;
     margin-left: 30px;
     transition: .3s;
 }
@@ -167,7 +159,7 @@
     transition: .3s;
 }
 .cart_icon {
-    color: #1d1d1d;
+    color: #666;
     font-size: 20px;
     transition: .3s;
 }
