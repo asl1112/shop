@@ -6,6 +6,7 @@ import Card from './pages/js/Card'
 import Popular from './pages/js/PopularCard'
 import Bestsellers from './pages/js/Bestsellers'
 import Brand from './pages/js/Brand'
+import Footer from './pages/js/Footer'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Popular />
       <Bestsellers />
       <Brand />
+      <Footer />
 
     </div>
   )

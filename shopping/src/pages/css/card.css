@@ -38,7 +38,6 @@
 }
 .card_wrapper {
     width: 100%;
-    height: auto;
     margin-top: 40px;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -340,7 +339,22 @@
 
 
 
-
+@media screen and (max-width: 991px) {
+    .card_wrapper {
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+    .skidki_wrapper {
+        grid-template-columns: auto auto auto ;
+    }
+    .popular_wrapper {
+        grid-template-columns: auto auto auto;
+    }
+    .bestsellers_wrapper {
+        grid-template-columns: auto auto auto;
+    }
+    
+}
 @media screen and (max-width: 400px) {
     .card_wrapper {
         grid-template-columns: auto;
@@ -349,6 +363,9 @@
         grid-template-columns: auto;
     }
     .popular_wrapper {
+        grid-template-columns: auto;
+    }
+    .bestsellers_wrapper {
         grid-template-columns: auto;
     }
 }

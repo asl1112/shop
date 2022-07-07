@@ -23,6 +23,7 @@ export default class Brand extends Component {
             </div>
         </div>
 
+
       </div>
     )
   }
