@@ -42,7 +42,7 @@ export default class Card extends Component {
 
       <div className='skidki_card'>
           <div className='skidki_top'>
-              <h4 className='skidki_title'>Скидки</h4>
+              <h4 className='skidki_title'>Скидки <span>%</span></h4>
               <p className='all_skidki all_categories'>Все товары в категории <BsArrowRight className='skidki_card_icon' /></p>
           </div>
           <div className='skidki_wrapper'>

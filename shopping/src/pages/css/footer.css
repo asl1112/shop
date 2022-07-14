@@ -19,7 +19,7 @@ li {
     height: 60%;
     margin-top: 65px;
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around; 
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 .footer_information {
@@ -195,4 +195,26 @@ li {
     font-size: 14px;
     color: #fff;
     text-align: center;
+}
+
+
+@media (max-width: 991px) {
+    .footer {
+        width: 100%;
+        height: auto;
+        padding: 0 2%;
+    }
+    .footer_body {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 40px 0;
+    }
+    .footer_bottom {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footer_box {
+        margin-top: 50px;
+    }
 }

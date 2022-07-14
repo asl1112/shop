@@ -1,7 +1,6 @@
 import React from 'react'
-import './pages/js/Navbar'
 import Navbar from './pages/js/Navbar'
-import Carousel from './pages/js/Carousel'
+import Header from './pages/js/Header'
 import Card from './pages/js/Card'
 import Popular from './pages/js/PopularCard'
 import Bestsellers from './pages/js/Bestsellers'
@@ -13,7 +12,7 @@ export default function App() {
     <div>
 
       <Navbar />
-      <Carousel />
+      <Header />
       <Card />
       <Popular />
       <Bestsellers />

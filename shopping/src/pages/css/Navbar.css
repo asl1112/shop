@@ -164,7 +164,22 @@
     transition: .3s;
 }
 
+
+@media (max-width: 991px) {
+    .nav {
+        width: 100%;
+        padding: 0 2%;
+        padding-top: 20px;
+    }
+    .nav_search {
+        width: 100%;
+    }
+    .search_inp {
+        width: 100%;
+    }
+}
 @media (max-width: 400px) {
+    
     .top_body {
         width: 100%;
         padding: 0 5%;

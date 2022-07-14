@@ -129,11 +129,8 @@
     font-size: 36px;
     color: #000;
 }
-.skidki_title::after {
-    content: '%';
-    font-size: 36px;
-    color: #FF3232;
-    margin-left: 5px;
+.skidki_title span {
+    color: #ff3232;
 }
 .all_skidki {
     color: #FF6875;
@@ -340,18 +337,44 @@
 
 
 @media screen and (max-width: 991px) {
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 0 2%;
+    }
+    .new_products {
+        font-size: 3vw;
+    }
     .card_wrapper {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         gap: 20px;
     }
+    .skidki_card {
+        width: 100%;
+        height: auto;
+        padding: 0 2%;
+    }
+    .all_categories {
+        font-size: 2.2vw;
+    }
     .skidki_wrapper {
-        grid-template-columns: auto auto auto ;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+    }
+    .skidki_title {
+        font-size: 3vw;
     }
     .popular_wrapper {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
+    }
+    .bestsellers {
+        width: 100%;
+        height: auto;
+        padding: 0 2%;
     }
     .bestsellers_wrapper {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
     }
     
 }

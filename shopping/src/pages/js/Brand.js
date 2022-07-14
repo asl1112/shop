@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 import '../css/brand.css'
-import apple from '../images/apple 1.png'
-import huawei from '../images/huawei.png'
-import samsung from '../images/samsung 1.png'
-import artel from '../images/artel.png'
-import mi from '../images/mi.png'
+// import apple from '../images/apple 1.png'
+// import huawei from '../images/huawei.png'
+// import samsung from '../images/samsung 1.png'
+// import artel from '../images/artel.png'
+// import mi from '../images/mi.png'
+import { SiSamsung } from 'react-icons/si'
+import { AiFillApple } from 'react-icons/ai'
+import { SiXiaomi } from 'react-icons/si'
+import { SiHuawei } from 'react-icons/si'
 
 
 export default class Brand extends Component {
@@ -15,11 +19,11 @@ export default class Brand extends Component {
         <div className='brand'>
             <h4 className='brand_title'>Популярные бренды</h4>
             <div className='brand_body'>
-                <span className='brand_icon'><img src={apple} alt='' /></span>
-                <span className='brand_icon'><img src={samsung} alt='' /></span>
-                <span className='brand_icon'><img src={huawei} alt='' /></span>
-                <span className='brand_icon artel'><img src={artel} alt='' /></span>
-                <span className='brand_icon'><img src={mi} alt='' /></span>
+                <span className='brand_icon'><AiFillApple /></span>
+                <span className='brand_icon'><SiSamsung /></span>
+                <span className='brand_icon'><SiHuawei /></span>
+                <span className='brand_icon artel'>artel</span>
+                <span className='brand_icon'><SiXiaomi /></span>
             </div>
         </div>
 

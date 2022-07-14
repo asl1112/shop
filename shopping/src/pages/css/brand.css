@@ -23,17 +23,38 @@
     border-radius: 30px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+    overflow: hidden;
 }
 .brand_icon {
+    font-size: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-right: 1px solid #c1c1c1;
+    color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    transition: .3s;
 }
 .brand_icon:last-child {
     border: none;
 }
-.artel {
+.brand_icon:hover {
     background-color: #FF8892;
+    color: #fff;
+}
+.artel {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-width: 991px) {
+    .brand {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .brand_icon {
+        font-size: 50px;
+    }
+    .brand_title {
+        font-size: 3vw;
+    }
 }
