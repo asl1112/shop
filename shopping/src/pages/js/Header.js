@@ -10,7 +10,6 @@ export default class Header extends Component {
       <div>
 
         <div className='header'>
-            
          <Carousel className='carousel'>
             <Carousel.Item className='carousel_item'>
                 <img

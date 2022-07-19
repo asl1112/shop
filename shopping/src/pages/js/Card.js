@@ -11,7 +11,7 @@ export default class Card extends Component {
   render() {
     return (
       <div>
-        <div className='card'>
+        <div className='card1'>
           <div className='card_top'>
               <h4 className='new_products'>Новинки </h4>
               <p className='all_categories'>Все категории <BsArrowRight className='card_top_icon' /></p>
