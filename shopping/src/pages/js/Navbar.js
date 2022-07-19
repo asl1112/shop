@@ -16,8 +16,10 @@ export default class Navbar extends Component {
             <div className='top_body'>
                 <div className='location_box'>
                     <h3 className='top_title'>О нас </h3>
-                    <MdLocationPin className='location_icon' /> 
-                    <p className='location_text'>Ташкент</p>
+                    <div className='location_box2'>
+                        <MdLocationPin className='location_icon' /> 
+                        <p className='location_text'>Ташкент</p>
+                    </div>
                 </div>
                 <div className='tel_box'>
                     <p className='tel_text'>  + 99899 000 00 00</p>
@@ -26,7 +28,7 @@ export default class Navbar extends Component {
             </div>
         </div>
 
-        <nav className='nav'>
+        <nav className='navbar'>
             <div className='nav_logo'>
                 <img src={logo} alt='logo' />
             </div>
@@ -40,6 +42,10 @@ export default class Navbar extends Component {
                     <input type='text' className='search_inp' placeholder='Что желаете найти?'></input>
                     <BiSearchAlt2 className='search_icon' />
                 </div>
+                <select className='dropdown'>
+                    <option>Рус</option>
+                    <option>O'zb</option>
+                </select>
             </div>
 
             <div className='nav_right'>

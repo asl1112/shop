@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul {
+    padding-left: 0;
+}
 li {
     list-style: none;
 }
@@ -13,6 +16,7 @@ li {
     padding: 0 10%;
     margin-top: 120px;
     padding-top: 10px;
+    position: relative;
 }
 .footer_body {
     width: 100%;
@@ -221,7 +225,8 @@ li {
 @media (max-width: 700px) {
     .footer_box {
         width: 90%;
-        height: 50vw;
+        height: 40vw;   
+        border-radius: 20px;
     }
     .footer_tel {
         font-size: 3vw;
@@ -241,9 +246,67 @@ li {
         font-size: 2vw;
     }
     .footer_icon {
+        width: auto;    
+        height: auto;
+        font-size: 3vw;
+        padding: 5px;
+    }
+}
+@media (max-width: 450px) {
+    .footer_information,
+    .footer_categories {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+    .inp_icon {
+        font-size: 3vw;
+    }
+    .tel_icon {
         width: auto;
+        height: auto;
+        padding: 6px;
+        font-size: 12px;
+    }
+    .box_search {
+        width: 60%;
+        height: 15%;
+    }
+    .footer_icon {
+        width: auto;    
         height: auto;
         font-size: 8px;
         padding: 5px;
+    }
+    .box_left {
+        padding-left: 20px;
+    }
+    .footer_text {
+        display: none;
+    }
+    .footer_logo {
+        position: absolute;
+        top: 10px; left: 20px;
+    }
+    .footer_body {
+        border: none;
+    }
+}
+@media (max-width: 420px) {
+    .inp_icon {
+        top: 80%;
+    }
+    .box_inp {
+        font-size: 10px;
+    }
+}
+@media (max-width: 360px) {
+    .footer_icons {
+        width: 90%;
+    }
+}
+@media (max-width: 320px) {
+    .inp_icon {
+        top: 100%;
     }
 }
