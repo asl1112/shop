@@ -1,24 +1,18 @@
 import React from 'react'
-import Navbar from './pages/js/Navbar'
-import Header from './pages/js/Header'
-import Card from './pages/js/Card'
-import Popular from './pages/js/PopularCard'
-import Bestsellers from './pages/js/Bestsellers'
-import Brand from './pages/js/Brand'
-import Footer from './pages/js/Footer'
+import Home from './pages/js/Home';
+import Basket from './pages/js/Basket'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
     <div>
-
-      <Navbar />
-      <Header />
-      <Card />
-      <Popular />
-      <Bestsellers />
-      <Brand />
-      <Footer />
-
+      <Home /> 
+      <BrowserRouter>
+        <Routes>
+          <Route path='/Home' element={<Home />} />
+          <Route path='/Basket' element={<Basket />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
