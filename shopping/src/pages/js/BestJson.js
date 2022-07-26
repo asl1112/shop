@@ -17,15 +17,15 @@ var Bestdata = [
       'id': 3,
        'img': '',
         'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro',
-        'price': '67 763,23 сум',
-        'sum':  '62 392,23 Сум'
+        'price': '67 763,23 oselbek',
+        'sum':  '62 392,23  oselbek'
     },
     {
       'id': 4,
        'img': '',
         'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro',
-        'price': '67 763,23 сум',
-        'sum':  '62 392,23 Сум'
+        'price': '67 763,23 oseelbek',
+        'sum':  '62 392,23 oselbek'
     }
 ]
 module.exports = Bestdata
