@@ -5,8 +5,6 @@ export default class Basket extends Component {
     return (
       <div>
         
-        
-
       </div>
     )
   }

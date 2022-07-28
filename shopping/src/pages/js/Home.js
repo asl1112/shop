@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar'
+// import Navbar from './Navbar'
 import Header from './Header'
 import Card from './Card'
 import Popular from './PopularCard'
@@ -12,7 +12,7 @@ export default class Home extends Component {
     return (
       <div>
 
-        <Navbar />
+        {/* <Navbar /> */}
         <Header />
         <Card />
         <Popular />

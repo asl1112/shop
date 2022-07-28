@@ -11,6 +11,7 @@ export default class Navbar extends Component {
   render() {
     return (
       <div>
+        
         <div className='top'>
             <div className='top_body'>
                 <div className='location_box'>
@@ -48,7 +49,7 @@ export default class Navbar extends Component {
             </div>
 
             <div className='nav_right'>
-                <div className='nav_cart' hre>
+                <div className='nav_cart'>
                     <BsCartFill className='cart_icon' />
                     <p className='cart_text'>Корзина</p>
                 </div>
