@@ -5,7 +5,7 @@ import Card from './Card'
 import Popular from './PopularCard'
 import Bestsellers from './Bestsellers'
 import Brand from './Brand'
-import Footer from './Footer'
+// import Footer from './Footer'
 
 export default class Home extends Component {
   render() {
@@ -18,7 +18,7 @@ export default class Home extends Component {
         <Popular />
         <Bestsellers />
         <Brand />
-        <Footer />
+        {/* <Footer /> */}
         
 
       </div>
