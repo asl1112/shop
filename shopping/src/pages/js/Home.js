@@ -4,7 +4,7 @@ import Header from './Header'
 import Card from './Card'
 import Popular from './PopularCard'
 import Bestsellers from './Bestsellers'
-import Brand from './Brand'
+// import Brand from './Brand'
 // import Footer from './Footer'
 
 export default class Home extends Component {
@@ -17,7 +17,7 @@ export default class Home extends Component {
         <Card />
         <Popular />
         <Bestsellers />
-        <Brand />
+        {/* <Brand /> */}
         {/* <Footer /> */}
         
 

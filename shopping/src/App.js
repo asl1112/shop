@@ -13,6 +13,7 @@ import Personal from './pages/js/PersonalData'
 import Products from './pages/js/Products'
 import Xits from './pages/js/Xits'
 import Skidki from './pages/js/Skidki'
+import Brand from './pages/js/Brand';
 import './pages/css/Navbar.css'
 import Footer from './pages/js/Footer'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
@@ -115,6 +116,7 @@ export default class App extends Component {
   }
   </div>
   )}
+  <Brand />
   <Footer />
   </BrowserRouter>
 

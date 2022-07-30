@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.product {
+    width: 100%;
+    height: auto;
+    padding: 50px 10%;
+}
+.product_top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.product_body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.product_left {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.product_box1 {
+    width: 205px;
+    display: flex;
+    flex-direction: column;
+}
+.product_img,
+.product_img2 {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.product_img {
+    margin-bottom: 24px;
+}
+.product_box2 {
+    width: 520px;
+    height: 381px;
+}
+.product_img3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.product_right {
+    width: 45%;
+    height: 100%;
+}
+.right_title {
+    font-weight: 700;
+    font-size: 21px;
+}
+.right_date {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 5px 0 2px 0;
+}
+.right_date span {
+    font-size: 15px;
+    color: #DCDCDC;
+    margin-left: 15px;
+}
+.right_info {
+    color: #7D7D7D;
+}
+.right_box {
+    display: flex;
+    align-items: center;
+}
+.box_title {
+    font-weight: 700;
+    font-size: 28px;
+}
+.right_box2 {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+.right_span {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #7D7D7D;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #359740;
+    font-weight: 700;
+    cursor: pointer;
+}
+.right_span:hover {
+    background-color: #359740;
+    border: none;
+    color: #fff;
+}
+.right_span2 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #359740;
+    margin: 0 10px;
+}
+.right_btn {
+    width: 360px;
+    height: 55px;
+    background-color: #359740;
+    color: #fff;
+    border-radius: 32px;
+    border: 1px solid #359740;
+    outline: none;
+    margin-top: 25px;
+    transition: .2s;
+}
+.right_btn:hover {
+    background-color: #fff;
+    color: #359740;
+}
