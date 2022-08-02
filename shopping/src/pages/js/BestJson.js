@@ -26,6 +26,90 @@ var Bestdata = [
         'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro4',
         'price': '67 763,23 oseelbek',
         'sum':  '62 392,23 oselbek'
+    },
+    {
+      'id': 5,
+       'img': '',
+        'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro4',
+        'price': '67 763,23 oseelbek',
+        'sum':  '62 392,23 oselbek'
+    },
+    {
+      'id': 6,
+       'img': '',
+        'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro4',
+        'price': '67 763,23 oseelbek',
+        'sum':  '62 392,23 oselbek'
+    },
+    {
+      'id': 7,
+       'img': '',
+        'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro4',
+        'price': '67 763,23 oseelbek',
+        'sum':  '62 392,23 oselbek'
+    },
+    {
+      'id': 8,
+       'img': '',
+        'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro4',
+        'price': '67 763,23 oseelbek',
+        'sum':  '62 392,23 oselbek'
+    },
+    {
+      'id': 9,
+       'img': '',
+        'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro4',
+        'price': '67 763,23 oseelbek',
+        'sum':  '62 392,23 oselbek'
+    },
+    {
+      'id': 10,
+       'img': '',
+        'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro4',
+        'price': '67 763,23 oseelbek',
+        'sum':  '62 392,23 oselbek'
+    },
+    {
+      'id': 11,
+       'img': '',
+        'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro4',
+        'price': '67 763,23 oseelbek',
+        'sum':  '62 392,23 oselbek'
+    },
+    {
+      'id': 12,
+       'img': '',
+        'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro4',
+        'price': '67 763,23 oseelbek',
+        'sum':  '62 392,23 oselbek'
+    },
+    {
+      'id': 13,
+       'img': '',
+        'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro4',
+        'price': '67 763,23 oseelbek',
+        'sum':  '62 392,23 oselbek'
+    },
+    {
+      'id': 14,
+       'img': '',
+        'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro4',
+        'price': '67 763,23 oseelbek',
+        'sum':  '62 392,23 oselbek'
+    },
+    {
+      'id': 15,
+       'img': '',
+        'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro4',
+        'price': '67 763,23 oseelbek',
+        'sum':  '62 392,23 oselbek'
+    },
+    {
+      'id': 16,
+       'img': '',
+        'infoText': 'Cовместимость со вспышками — AD200/ AD200Pro4',
+        'price': '67 763,23 oseelbek',
+        'sum':  '62 392,23 oselbek'
     }
 ]
 module.exports = Bestdata

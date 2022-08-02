@@ -15,27 +15,29 @@ export default class Bestsellers extends Component {
             <p className='all_bestsellers all_categories'>Все товары в категории <BsArrowRight className='bestsellers_top_icon' /></p>
           </div>
           <div className='bestsellers_wrapper'>
-            {Bestdata.map(item => {
+            {Bestdata.map((item, key )=> {
+              if(key < 4) {
                 return <div className='bestsellers_list'>
-                  <img src={bestsellersImg} alt='img' className='bestsellers_img' />
-                  <div className='bestsellers_text'>
-                    <span className='bestsellers_span'>Хит</span>
-                    <p className='bestsellers_percent'>{item.percentage}</p>
-                    <p className='bestsellers_info'>{item.infoText}</p>
-                    <p className='bestsellers_price'>{item.price}</p>
-                    <p className='bestsellers_sum'>{item.sum}</p>
-                    <div className='bestsellers_bottom'>
-                      <select id="bestsellers_drop">
-                        <option>1 шт.</option>
-                        <option>2 шт.</option>
-                        <option>3 шт.</option>
-                      </select>
-                      <div className='bestsellers_icons'>
-                        <MdAddShoppingCart className='bestsellers_icon' />
-                      </div>
+                <img src={bestsellersImg} alt='img' className='bestsellers_img' />
+                <div className='bestsellers_text'>
+                  <span className='bestsellers_span'>Хит</span>
+                  <p className='bestsellers_percent'>{item.percentage}</p>
+                  <p className='bestsellers_info'>{item.infoText}</p>
+                  <p className='bestsellers_price'>{item.price}</p>
+                  <p className='bestsellers_sum'>{item.sum}</p>
+                  <div className='bestsellers_bottom'>
+                    <select id="bestsellers_drop">
+                      <option>1 шт.</option>
+                      <option>2 шт.</option>
+                      <option>3 шт.</option>
+                    </select>
+                    <div className='bestsellers_icons'>
+                      <MdAddShoppingCart className='bestsellers_icon' />
                     </div>
                   </div>
                 </div>
+              </div>
+              }
               })}
           </div>
       </div>

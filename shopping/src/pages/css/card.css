@@ -44,8 +44,9 @@
 }
 .card_list {
     width: 302px;
-    height: 560px;
+    height: auto;
     border-radius: 30px;
+    margin-bottom: 20px;
     background: linear-gradient(98.34deg, #FFFFFF 0%, #FFFFFF 100%);
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08);
 }
@@ -150,6 +151,7 @@
 .scard_list {
     width: 302px;
     height: auto;
+    margin-bottom: 20px;
     border-radius: 30px;
     background: linear-gradient(98.34deg, #FFFFFF 0%, #FFFFFF 100%);
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08);
@@ -254,6 +256,7 @@
 .bestsellers_list {
     width: 302px;
     height: auto;
+    margin-bottom: 20px;
     border-radius: 30px;
     background: linear-gradient(98.34deg, #FFFFFF 0%, #FFFFFF 100%);
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08);

@@ -29,6 +29,7 @@
     width: 205px;
     display: flex;
     flex-direction: column;
+    margin-right: 50px;
 }
 .product_img,
 .product_img2 {
