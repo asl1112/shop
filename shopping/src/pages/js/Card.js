@@ -5,24 +5,35 @@ import { BsArrowRight } from "react-icons/bs";
 import { MdAddShoppingCart } from "react-icons/md";
 import cardImg from '../images/card3.png'
 import cardImg2 from '../images/card2.png'
-const data = require("./CardJson")
+import { localStorage } from 'local-storage'
 const Sdata = require("./SkidkiJson")
 
 export default class Card extends Component {
   state = {
     data1: []
   }
+  getShop=(name,price,img,skidka)=>{
+    console.log(name,price,img,skidka);
+  }
   componentDidMount() {
     axios.get('http://shop.abrorjonaxmadov.uz/api/v1/products/')
     .then(res => {
-      this.setState({data1: res.data})
+      this.setState({data1:res.data})
       console.log(this.state.data1)
     })
     .catch(err => {
       console.log('xato');
     })
     
+    
   }
+// // Put the object into storage
+// localStorage.setItem('testObject', JSON.stringify(Sdata));
+
+// Retrieve the object from storage
+// var retrievedObject = localStorage.getItem('testObject');
+
+// console.log('retrievedObject: ', JSON.parse(retrievedObject));
   render() {
     return (
       <div>
@@ -52,7 +63,7 @@ export default class Card extends Component {
                       <option>2 шт.</option>
                       <option>3 шт.</option>
                     </select>
-                    <div className='card_icons'>
+                    <div className='card_icons' onClick={()=>this.getShop(item.title,item.price,(item.thumbnail!==null?(item.thumbnail):(cardImg)),(item.in_promotion!==null?(item.in_promotion):(0)))}>
                       <MdAddShoppingCart className='card_icon' />
                     </div>
                   </div>
@@ -85,7 +96,7 @@ export default class Card extends Component {
                       <option>2 шт.</option>
                       <option>3 шт.</option>
                     </select>
-                    <div className='scard_icons'>
+                    <div className='scard_icons' onClick={()=>{this.getShop(item.infoText,item.price,item.img,item.percentage)}}>
                       <MdAddShoppingCart className='scard_icon' />
                     </div>
                   </div>

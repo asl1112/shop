@@ -54,6 +54,7 @@
     width: 282px;
     height: 271px;
     margin: 10px;
+    border-radius: 30px;
     transition: .3s;
 }
 .card_list:hover .card_img {
