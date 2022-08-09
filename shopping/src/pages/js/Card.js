@@ -5,15 +5,43 @@ import { BsArrowRight } from "react-icons/bs";
 import { MdAddShoppingCart } from "react-icons/md";
 import cardImg from '../images/card3.png'
 import cardImg2 from '../images/card2.png'
-import { localStorage } from 'local-storage'
 const Sdata = require("./SkidkiJson")
 
 export default class Card extends Component {
   state = {
-    data1: []
+    data1: [],
+    localStorage:[]
   }
   getShop=(name,price,img,skidka)=>{
+    var push = true
     console.log(name,price,img,skidka);
+    var data={
+      "name":name,
+      "price":price,
+      "img":img,
+      "scidka":skidka,
+      "count":1
+    }
+    if(this.state.localStorage[0]===undefined) {
+      this.state.localStorage.push(data)
+      push=false
+    } else {
+      for (let i = 0; i < this.state.localStorage.length; i++) {
+        if(this.state.localStorage[i].name === data.name) {
+          data.count++
+          push = true
+        }
+      }
+     
+    }
+    if(push) {
+      this.state.localStorage.push(data)
+    }
+    
+    this.setState({})
+    console.log(data);
+    console.log(this.state.localStorage)
+ localStorage.setItem('testObject', JSON.stringify(this.state.localStorage));
   }
   componentDidMount() {
     axios.get('http://shop.abrorjonaxmadov.uz/api/v1/products/')
@@ -24,8 +52,12 @@ export default class Card extends Component {
     .catch(err => {
       console.log('xato');
     })
-    
-    
+    // if( localStorage.getItem('testObject')==null){
+    //   this.setState({localStorage:[]})
+    // }else{
+    //   this.setState({localStorage:localStorage.getItem('testObject')})
+    // }
+   
   }
 // // Put the object into storage
 // localStorage.setItem('testObject', JSON.stringify(Sdata));
@@ -44,7 +76,7 @@ export default class Card extends Component {
               <p className='all_categories'>Все категории <BsArrowRight className='card_top_icon' /></p>
           </div>
           <div className='card_wrapper'>
-            {this.state.data1.map((item, key )=> {
+            {this.state.data1.map((item, key ) => {
                 if(key<4){
                   return <div className='card_list'>
                     {item.thumbnail!=null?(
